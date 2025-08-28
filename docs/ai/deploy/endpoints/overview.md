@@ -15,11 +15,17 @@ tags:
 
 # Endpoints
 
-_Endpoints_ are connectors between AI Agents and [external systems or platforms](../endpoint-reference/overview.md), such as Facebook (Meta) Messenger, Slack, Alexa, and others.
+* _Endpoints_
+  * == connectors BETWEEN AI Agents -- & --[external systems or platforms](../endpoint-reference/overview.md)
+    * _Example:_ Meta Messenger, Slack, Alexa
+  * support
+    * | contact centers,
+      * chat conversations
+      * voice conversations 
+  * integrate with [handover provider](../../escalate/handovers.md)
+    * Reason:🧠manage these connectors interactions🧠
 
-Endpoints support chat and voice conversations in contact centers and integrate with [handover provider](../../escalate/handovers.md) to manage these interactions.
-
-Endpoints convert [channel-specific](../../build/nodes/channels.md) input and output, including images, galleries, and voice, into the structure of the [Input object](../../build/ai-agent-memory/input.md). This approach allows the development of platform-agnostic [Flows](../../build/flows/overview.md) that require no modification when you add new channels.
+* TODO: Endpoints convert [channel-specific](../../build/nodes/channels.md) input and output, including images, galleries, and voice, into the structure of the [Input object](../../build/ai-agent-memory/input.md). This approach allows the development of platform-agnostic [Flows](../../build/flows/overview.md) that require no modification when you add new channels.
 
 ## Working with Endpoints
 

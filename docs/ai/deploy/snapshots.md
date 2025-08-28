@@ -17,53 +17,48 @@ tags:
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../release-notes/4.47.md)
 
-A _Snapshot_ is an immutable version of an AI Agent that you can publish to users through [Endpoints](endpoints/overview.md).
-
-You can also download a Snapshot as a Cognigy Snapshot file, with the `.csnap` extension, which you can use only in Cognigy.AI. Snapshots have encrypted data because they can include potentially sensitive information, such as [Connections](../build/connections.md).
-
-1. In the left-side menu of the Project, go to **Deploy > Snapshots**.
-2. On the **Snapshots** page, click **Upload Snapshot**.
-3. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with a progress bar.
-4. Once the file has been uploaded, a new [task](../build/projects.md), titled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
-
-- [Deploy an AI Agent version through Endpoints](#deploy-a-snapshot) and use it as the production version while your developers work on the next version.
-- [Back up](#restore-a-snapshot) your AI Agent in case you need to return to the back up one.
-- [Transfer](#deploy-ai-agents-to-production-with-snapshots) an AI Agent between different CI/CD environments.
-
-A Snapshot includes the following resources:
-
-- [AI Agents](../empower/agentic-ai/overview.md)
-- [Connections](../build/connections.md)
-- [Extensions](../build/extensions.md)
-- [Flows](../build/flows/overview.md)
-- [Functions](../build/functions.md)
-- [Large Language Models](../empower/llms/overview.md)
-- [Lexicons](../empower/nlu/slots/user-defined/lexicon.md)
-- [Localization](../build/translation-and-localization/localization.md)
-- [Natural Language Understanding (NLU) Connectors](../empower/nlu/external/nlu-connectors/overview.md)
-- [Playbooks](../test/playbooks.md)
-- [Settings](../build/projects.md#working-with-projects)
-- [Tokens](../build/tokens.md)
-- [Trained NLU Intent models](../empower/nlu/intents/overview.md)
+* _Snapshot_
+  * := AI Agent's IMMUTABLE version /
+    * data is encrypted
+      * Reason: 🧠it can include sensitive information (_Example:_ [Connections](../build/connections.md)) 
+    * 's resources
+      - [AI Agents](../empower/agentic-ai/overview.md)
+      - [Connections](../build/connections.md)
+      - [Extensions](../build/extensions.md)
+      - [Flows](../build/flows/overview.md)
+      - [Functions](../build/functions.md)
+      - [Large Language Models](../empower/llms/overview.md)
+      - [Lexicons](../empower/nlu/slots/user-defined/lexicon.md)
+      - [Localization](../build/translation-and-localization/localization.md)
+      - [Natural Language Understanding (NLU) Connectors](../empower/nlu/external/nlu-connectors/overview.md)
+      - [Playbooks](../test/playbooks.md)
+      - [Settings](../build/projects.md#working-with-projects)
+      - [Tokens](../build/tokens.md)
+      - [Trained NLU Intent models](../empower/nlu/intents/overview.md)
+  * ways to use
+    * 👀publish the snapshots -- , through [Endpoints](endpoints/overview.md), to -- users 👀
+      * see [here](#deploy-a-snapshot)
+    * download a Snapshot (-- as -- ".csnap") & use | Cognigy.AI
+      * steps
+        1. TODO: In the left-side menu of the Project, go to **Deploy > Snapshots**.
+        2. On the **Snapshots** page, click **Upload Snapshot**.
+        3. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with a progress bar.
+        4. Once the file has been uploaded, a new [task](../build/projects.md), titled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../_assets/icons/task-menu.svg) in the upper-right corner.
+  * OTHER supported actions
+    * [Back up your AI Agent](#restore-a-snapshot)
+    * [Transfer an AI Agent BETWEEN DIFFERENT CI/CD environments](#deploy-ai-agents-to-production-with-snapshots)
 
 ## Restrictions
 
-- Snapshots don't include the following resources:
-
-    - Endpoints
-    - Intent Trainer records
-    - Analytics data
-    - Contact Profiles
-    - Logs
-    - Knowledge AI
-    - Other Snapshots
-
-- The `text-embedding-3-model` [model](../empower/llms/model-support-by-feature.md) increases the size of Snapshots, leading to longer download and upload times.
-- Earlier versions of Cognigy.AI might not support Snapshots created in newer versions and can cause unexpected errors.
+- `text-embedding-3-model` [model](../empower/llms/model-support-by-feature.md)
+  - increases the Snapshots' size
+    - -> ⚠️longer download & upload times⚠️
+- Cognigy.AI's earlier versions
+  - ❌might NOT support Snapshots / created | NEWER versions❌
 
 ## Limitations
 
-- You can create up to 10 Snapshots per AI Agent. For dedicated SaaS and on-premises installations, you can change this value using the `MAX_AMOUNT_SNAPSHOTS_IN_AGENT` environment variable in `values.yaml`.
+- TODO: You can create up to 10 Snapshots per AI Agent. For dedicated SaaS and on-premises installations, you can change this value using the `MAX_AMOUNT_SNAPSHOTS_IN_AGENT` environment variable in `values.yaml`.
 - You can store up to 256 MB of Snapshots. If you reach this limit, you must first delete other Snapshots before creating or uploading new ones. For dedicated SaaS and on-premises installations, you can increase the maximum memory for Snapshots using the `SNAPSHOT_MAX_FILE_SIZE` environment variable in `values.yaml`.
 - You have up to 1 day to download a Snapshot after you've prepared the download. After this period, you need to prepare the download again.
 
