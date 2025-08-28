@@ -10,14 +10,7 @@ tags:
 
 # Getting Started with Voice Gateway
 
-<figure>
-<img class="image-center" src="../../../_assets/voice-gateway/VG-logo.png" width="80%" />
-   <figcaption>Voice Gateway Logo</figcaption>
-</figure>
-
 ## How to Set Up Voice Gateway?
-
-To set up Voice Gateway, do the following steps:
 
 1. [Create a Voice Gateway Flow](#create-a-voice-gateway-flow)
 2. [Create a Voice Gateway Endpoint](#create-a-voice-gateway-endpoint)
@@ -26,24 +19,34 @@ To set up Voice Gateway, do the following steps:
 
 ## Create a Voice Gateway Flow
 
-Start your **Voice Gateway** project by creating a voice-enabled flow. With a voice conversation, the AI Agent must respond with a text-based message for every user input. Voice conversations happen on a turn-by-turn basis, meaning that all dialogue outputs that are triggered by the flow will be bundled into one message and delivered across the phone line.
+* goal
+  * create a voice-enabled flow
 
-Every Cognigy.AI node that offers text-based messages can be used in a voice flow. If you have rich media in your flow, the fallback text field will be used as voice output.
+* voice conversation
+  * AI Agent must respond -- with a -- text-based message / EVERY user input
+  * turn-by-turn basis
+    * == ALL dialogue outputs / triggered by the flow
+      * are bundled | 1 message
+      * delivered ACROSS the phone line
 
-If there is a Voice Gateway channel-specific configuration, this configuration will be used instead of the one in the default section. In the Voice Gateway channel, you can find pre-defined SSML tags and [activity parameters](../ai/build/node-reference/voice/voice-gateway/parameter-details.md).
+* Cognigy.AI node / offers text-based messages
+  * uses
+    * voice flow
+  * TODO:If you have rich media in your flow, the fallback text field will be used as voice output.
 
-For voice-specific actions, you can use the [Voice Gateway Flow Nodes](../ai/build/node-reference/voice/voice-gateway/overview.md).
+* If there is a Voice Gateway channel-specific configuration, this configuration will be used instead of the one in the default section
+* In the Voice Gateway channel, you can find pre-defined SSML tags and [activity parameters](../ai/build/node-reference/voice/voice-gateway/parameter-details.md).
 
-!!! note
-    With the native Cognigy Voice Gateway integration to Cognigy.AI, the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
+* | voice-specific actions,
+  * use the [Voice Gateway Flow Nodes](../ai/build/node-reference/voice/voice-gateway/overview.md)
 
-<figure>
-   <img class="image-center"  src="../../../_assets/voice-gateway/VG-nodes-overview.png"  width="80%" />
-</figure>
+* With the native Cognigy Voice Gateway integration to Cognigy.AI, the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
+
+![](../../docs/_assets/voice-gateway/VG-nodes-overview.png)
 
 ## Create a Voice Gateway Endpoint
 
-To do voice-based experiences with your AI Agent, create your [Voice Gateway Endpoint](../ai/deploy/endpoint-reference/voice-gateway.md) in Cognigy.AI. To do that:
+* To do voice-based experiences with your AI Agent, create your [Voice Gateway Endpoint](../ai/deploy/endpoint-reference/voice-gateway.md) in Cognigy.AI. To do that:
 
 1. In the left-side menu of the Cognigy.AI interface, select a Project where you want to create a voice Flow.
 2. In the left-side menu of the Project, go to **Deploy > Endpoints**. 
@@ -54,9 +57,7 @@ To do voice-based experiences with your AI Agent, create your [Voice Gateway End
     3. Select a relevant Flow from the list.<br>
 5. Click **Save**.
 
-<figure>
-   <img class="image-center" src="../../../_assets/voice-gateway/VG-endpoint-new.png" width="100%" />
-</figure>
+![](../../docs/_assets/voice-gateway/VG-endpoint-new.png)
 
 ## Route Contact Centers or Phone Numbers to Voice Gateway
 

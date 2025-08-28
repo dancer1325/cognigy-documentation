@@ -7,15 +7,12 @@ hidden: false
 
 # Voice Gateway Technical Capabilities
 
-This article is intended for individuals considering Voice Gateway for their telecommunication needs. 
-It provides a detailed overview of the platform's extensive technical capabilities, including support for various protocols such as SIP and RTP, as well as audio codecs. 
-The description highlights several features, including call routing, custom SIP headers, and call recording integration,
-which address diverse requirements.
-Additionally, the article describes the use of STT and TTS providers and emphasizes the advanced tools for monitoring call quality.
+* goal
+  * audience
+    * individuals / are considering to use Voice Gateway
+  * platform's extensive technical capabilities + support for various protocols (SIP & RTP) + audio codecs
 
 ## Supported Protocols
-
-The following protocols are supported:
 
 | Protocol                                                       | Supported Functionality                                                                                                                                                                                         |
 |----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -42,8 +39,6 @@ The following protocols are supported:
 | SIP REFER                                                      | Sending the SIP REFER method to transfer calls, as specified in [RFC 3515](https://datatracker.ietf.org/doc/html/rfc3515). Receiving SIP REFER is not supported.                                                                                             |
 
 ## Supported Codecs
-
-The following audio codecs are supported:
 
 - `G.711` (preferred):
     - `A-law`.
@@ -94,7 +89,3 @@ The following audio codecs are supported:
 - Observability features include [tracing call events with open telemetry](webapp/recent-calls.md).
 - Visual view of [speech latency](webapp/recent-calls.md#call-recordings) (TTS and STT) on each call.
 - [Caching of TTS audio](webapp/accounts.md#tts-prompt-caching) when possible to reduce costs.
-
-## Technical Support
-
-For any further or more specific questions about the Voice Gateway technical capabilities, contact [Cognigy technical support](../help/get-help.md).

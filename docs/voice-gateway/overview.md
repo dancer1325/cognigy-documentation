@@ -6,10 +6,12 @@
 
 # Overview
 
-*Cognigy Voice Gateway* is an AI-based solution to deploy voice AI Agents for automated phone conversations. It is seamlessly integrated with the Cognigy.AI platform and allows you to connect your AI Agent to your contact center.
+* _Cognigy Voice Gateway_
+  * == AI-based solution / 
+    * 💡connect voice AI Agents -- to -- your contact center💡
+      * _Example of voice-based services:_ phone calls, voice assistants, and smart speakers
+      * _Example of provided functions:_ speech recognition, natural language understanding, dialogue management, text-to-speech and speech-to-text conversion
+    * == ⚠️Cognigy.AI's add-on product⚠️
+      * -> ❌Cognigy Voice Gateway can NOT be used INDEPENDENTLY❌
 
-Voice Gateway provides users with voice-based services, such as phone calls, voice assistants, and smart speakers. Also, Voice Gateway can perform various functions, such as speech recognition, natural language understanding, dialogue management, text-to-speech and speech-to-text conversion.
-
-Voice Gateway is installed in addition to the main product [Cognigy.AI](../index.md) and cannot be used independently. If you want to use Voice Gateway, contact [Cognigy technical support](../help/get-help.md) to get access. 
-
-<img src="../../../_assets/voice-gateway/VG_architecture.png" alt="Voice Gateway Overview" />
+![Voice Gateway Overview](../../docs/_assets/voice-gateway/VG_architecture.png)
