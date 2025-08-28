@@ -13,20 +13,24 @@ tags:
 
 # NLU Overview
 
-_Cognigy Natural Language Understanding (Cognigy NLU)_ is the core engine of Cognigy.AI that allows AI Agents to interpret human language. Cognigy NLU processes text and speech to determine meaning, identify user queries, and understand context, enabling more humanlike conversations.
+* _Cognigy Natural Language Understanding (Cognigy NLU)_
+  * == Cognigy.AI's core engine
+    * allows
+      * AI Agents can interpret human language -- via -- text & speech
 
 <div class="grid cards" markdown>
 
--   :bulb:{ .lg .middle } __Intents__
+- :bulb:{ .lg .middle } __Intents__
+  - goal
+    - Intents' fundamentals
+    - how are Intents used | Cognigy.AI?
+  - allows
+    - enhance conversational AI capabilities 
 
-    ---
-
-    Learn the fundamentals of Intents and how they're used in Cognigy.AI to enhance conversational AI capabilities
-
-    [:octicons-arrow-right-24: Overview](intents/overview.md)<br>
-    [:octicons-arrow-right-24: Intent Sentences](intents/example-sentences.md)<br>
-    [:octicons-arrow-right-24: Annotations](intents/annotations.md)<br>
-    [:octicons-arrow-right-24: Default Reply](intents/default-reply.md)<br>
+      [:octicons-arrow-right-24: Overview](intents/overview.md)<br>
+      [:octicons-arrow-right-24: Intent Sentences](intents/example-sentences.md)<br>
+      [:octicons-arrow-right-24: Annotations](intents/annotations.md)<br>
+      [:octicons-arrow-right-24: Default Reply](intents/default-reply.md)<br>
 
 -   :brain:{ .lg .middle } __NLU Performance Tuning__
 

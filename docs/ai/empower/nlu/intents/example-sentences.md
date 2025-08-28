@@ -11,15 +11,20 @@ tags:
 
 # Intent Example Sentences
 
-_Intent Example Sentences_ are phrases that show how users might express their intentions to the AI Agent. A diverse set of example sentences enables the AI Agent to recognize a larger variety of user inputs. By associating these examples with specific Intents, the AI Agent can better understand and respond to user needs. These sentences help ensure the NLU model is well-trained and ready for human-AI interactions.
+* _Intent Example Sentences_
+  * == phrases / 👀enables the AI Agent -- to recognize a -- larger variety of user inputs👀
+    * Reason: 🧠train the NLU model🧠
 
 ## Limitations
 
-- You can add up to 2000 example sentences per Intent.
-- The minimum number of example sentences is 5. If you attempt to train an Intent with fewer than 5 example sentences, a [red indicator](intent-analyzer.md#explore-intent-analyzer) will appear once the build completes.
+- <= 2000 example sentences / Intent
+- \>=5
+  - == MINIMUM number of example sentences 
+  - if you use fewer -> | complete the build, appear [red indicator](intent-analyzer.md#explore-intent-analyzer)
 
 ## Managing Intent Sentences
 
+* TODO:
 ??? info "Create Intent Sentences"
 
     === "Manually"

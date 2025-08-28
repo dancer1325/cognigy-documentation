@@ -10,28 +10,28 @@ tags:
 
 # Intents
 
-In Cognigy.AI, _Intents_ identify user's goals based on their input.
-Each Intent is defined by example sentences that show how users might express a specific request.
-For example,
-an Intent named `OrderFood` might include sentences like `Can you get me some food?` or `I'd like to order a pizza`.
-The NLU engine analyzes and scores these Intents to match user inputs.
+* Cognigy.AI's _Intents_
+  * identify user's goals -- based on -- their input
+  * == [example sentences](example-sentences) + [additional configuration](#apply-additional-settings)
 
-Each Intent includes:
-
-- [Example Sentences](#add-example-sentences)
-- [Additional Configuration](#apply-additional-settings)
+* NLU engine
+  * analyzes & scores Cognigy.AI's Intents -- to -- match user inputs
 
 ## Working with Intents
 
-=== "GUI"
-     You can create, edit, and manage Intents as well as download and upload them in **NLU > Intents** of the Flow editor.
+* "GUI"
+  * allows
+    * create, edit, and manage Intents
+    * download & upload them | Flow editor's **NLU > Intents** 
 
-=== "API"  
-     You can create, edit, and manage Intents as well as download and upload them using the [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#get-/v2.0/flows/-flowId-/Intents).
+* "API"
+  * allows
+    * create, edit, and manage Intents
+    * download & upload them -- via -- [Cognigy.AI API](https://api-trial.cognigy.ai/openapi#get-/v2.0/flows/-flowId-/Intents)
 
 ### Download and Upload Intents
 
-Intents can be uploaded to and downloaded from Cognigy.AI as CSV or JSON files. Use these CSV or JSON files to import Intents, edit using your favorite spreadsheet or developer tools, and move them between Flows.
+* TODO: Intents can be uploaded to and downloaded from Cognigy.AI as CSV or JSON files. Use these CSV or JSON files to import Intents, edit using your favorite spreadsheet or developer tools, and move them between Flows.
 
 ??? info "CSV"
     Your CSV should be formatted as follows:
@@ -96,7 +96,8 @@ Intents can be uploaded to and downloaded from Cognigy.AI as CSV or JSON files. 
 
 ### Add Example Sentences
 
-When you create an Intent, add [example sentences](example-sentences.md) that help the NLU model recognize user queries.
+* allow
+  * NLU model can recognize user queries
 
 ### Build the NLU Model
 
