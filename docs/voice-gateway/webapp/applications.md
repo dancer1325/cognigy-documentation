@@ -8,21 +8,20 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.69-blue.svg)](../../release-notes/4.69.md)
 
-*Applications* are connectors
-that allow the [Endpoint](../getting-started.md#create-a-voice-gateway-endpoint) to be routed to Voice Gateway.
-These applications set default values, including the default speech vendor, 
-language, and voice, for the Text-To-Speech output and Speech-To-Text recognition.
+* == Connectors /
+  * allow
+    * Endpoint is routed -- to the -- Voice Gateway
+* default values
+  * _Example:_ speech vendor, language, and voice, Text-To-Speech output & Speech-To-Text recognition
+* NUMBER of applications to create
+  * -- depend on the -- NUMBER of Endpoints / created | Cognigy.AI 
 
-To create an application, select **Applications** in the left-side menu, then click **Add application** or **+**.
+* steps to create an application
+  * | left-side menu,
+    * select **Applications**
+    * click **Add application** OR **+**
 
-You can create more than one application, dependent on the number of Endpoints created in Cognigy.AI.
-
-After creating an application, you can edit or delete it.
-
-<figure>
-  <img class="image-center"  src="../../../_assets/voice-gateway/VG-webapp-applications-overview.png"  width="60%"/>
-  <figcaption>Applications</figcaption>
-</figure>
+![](../../_assets/voice-gateway/VG-webapp-applications-overview.png)
 
 ## Settings 
 

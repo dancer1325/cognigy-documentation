@@ -7,8 +7,6 @@ hidden:  false
 
 # Voice Gateway Glossary
 
-Voice Gateway terms listed in alphabetical order. All terms in the glossary are given for informational purposes.
-
 ## A
 
 _**Account (scope)**_
@@ -26,7 +24,12 @@ _**Alerts**_
 : Alerts are created when errors happen in your account configuration. For example, your credentials from the speech provider need to be updated. For more information, read the [Alerts](webapp/alerts.md) documentation.
 
 _**Applications**_
-: Connectors that allow the Endpoint to be routed to the Voice Gateway. For more information, read the [Applications](webapp/applications.md) and [Create Voice Gateway Endpoint](getting-started.md#create-a-voice-gateway-endpoint) documentation.
+* == Connectors /
+  * allow
+    * Endpoint is routed -- to the -- Voice Gateway
+* see 
+  * [Applications](webapp/applications.md)
+  * [Create Voice Gateway Endpoint](getting-started.md#create-a-voice-gateway-endpoint)
 
 _**Atmosphere Sounds**_
 : A parameter within the Session Config Node, which allows the user to configure a background track to be played during the conversation. An Atmosphere Sounds track can be played, silenced, or stopped at any point during the Voice Gateway conversation. You can lower the volume of the track if it's too loud and might overwhelm the conversation, or increase it if it's not audible enough. For more information, read the [Voice Gateway Parameter Details](../ai/build/node-reference/voice/voice-gateway/parameter-details.md) documentation.
